@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        html,body{
+            height:100%;
+            width:100%;
+            position: relative;
+        }
+
+        nav{
+            border:1px solid gray;
+            height: 80px;
+            position: absolute;
+            top:0;
+            width: 100%;
+            background:transparent;
+            border-color: transparent;
+        }
+
+        .section{
+            display: flex;
+            background:grey;
+            height: 100%;
+            /* height: calc(100% - 80px); */
+        }
+
+        section{
+            height:100%;
+            width: 100%;
+            /* background-image:url('https://cdn.hipwallpaper.com/m/42/27/wiDz8g.jpg');
+            background-size: cover;
+            background-repeat:  no-repeat;
+            */
+            background:lightslategray;
+            transition: width 1.5s, height 1.5s;
+
+        }
+
+        section.odd{
+            /* background-image: url('https://i.stack.imgur.com/p9mUO.jpg');
+            background-size: cover;
+            background-repeat:  no-repeat; */
+            background: lightyellow;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <nav> </nav>
+
+    <div id="container" class="section">
+        
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="animated-column.js"></script>
+</body>
+
+</html>
